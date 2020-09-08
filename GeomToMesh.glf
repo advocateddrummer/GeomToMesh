@@ -1110,13 +1110,13 @@ if [pw::Application isInteractive] {
             puts "CADFile = $CADFile"
         } else {
             set ftypes {
-                {{All CAD files} {.igs .iges .stp .step .nmb .egads}}
-                {{IGES files}    {.igs}}
-                {{IGES files}    {.iges}}
-                {{STEP files}    {.stp}}
-                {{STEP files}    {.step}}
-                {{NMB files}     {.nmb}}
-                {{EGADS files}   {.egads}}
+                {{All CAD files} {.igs .IGS .iges .IGES .stp .STP .step .STEP .nmb .NMB .egads .EGADS}}
+                {{IGES files}    {.igs .IGS}}
+                {{IGES files}    {.iges .IGES}}
+                {{STEP files}    {.stp .STP}}
+                {{STEP files}    {.step .STEP}}
+                {{NMB files}     {.nmb .NMB}}
+                {{EGADS files}   {.egads .EGADS}}
             }
             set fullname [getFileNameDlg CADFile $ftypes]
             set CADFile $fullname
